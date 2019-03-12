@@ -7,7 +7,6 @@ class Post < ActiveRecord::Base
 
   def clickbait
     ["Won't Believe", "Secret", "Top [number]", "Guess"].any? do |e|
-      puts title
       !title.include?(e) if title
     end
   end
